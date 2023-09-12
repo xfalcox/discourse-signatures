@@ -44,6 +44,9 @@ after_initialize do
     end
   end
 end
+    
+AdminDashboardData.add_problem_check do
+  "Your installed version of discourse-signatures is no longer maintained. Please update your app.yml file to install the official plugin version from https://github.com/discourse/discourse-signatures"
+end
 
-register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/signature-preferences.hbs"
 register_asset "stylesheets/common/signatures.scss"
